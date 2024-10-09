@@ -37,6 +37,6 @@ export async function GET() {
   return NextResponse.redirect(
     process.env.NODE_ENV === "development"
       ? "http://localhost:3000/"
-      : "https://next-takealot-redesign-mu.vercel.app/"
+      : "https://synergerp-finance-indaba.vercel.app/"
   );
 }
