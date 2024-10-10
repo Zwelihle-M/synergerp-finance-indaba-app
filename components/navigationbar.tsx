@@ -17,6 +17,7 @@ import SynergLogo from "@/public/logo/synerp-logo.png";
 import Image from "next/image";
 import { navigationbarLinks } from "@/data";
 
+
 const Navigationbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (

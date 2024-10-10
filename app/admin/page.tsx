@@ -27,6 +27,7 @@ import { unstable_noStore as noStore } from "next/cache";
 import { Container } from "@/components/ui/container";
 import Image from "next/image";
 import ShuffleWinner from "@/components/shuffle";
+import CurrentSession from "@/components/current-session";
 
 async function fetchWinnersData() {
   const data = await prisma.winner.findMany({
@@ -43,6 +44,10 @@ export default async function AdminPage() {
   const data = await fetchWinnersData();
   return (
     <Container size={"twoxl"}>
+
+<div className="pt-5 pb-5">
+      <CurrentSession/>
+      </div>
       <Card className="mt-5 pb-10">
         <CardHeader>
           <CardTitle>Winners</CardTitle>
@@ -120,6 +125,9 @@ export default async function AdminPage() {
       <div>
         <ShuffleWinner />
       </div>
+
+      
+
     </Container>
   );
 }

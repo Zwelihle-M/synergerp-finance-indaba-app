@@ -43,7 +43,7 @@ export default function CreateWinner() {
   return (
     <Container size={"twoxl"}>
       <form id={form.id} onSubmit={form.onSubmit} action={action}>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 mb-5">
           <Button variant={"outline"} size={"icon"} asChild>
             <Link href={"/admin"}>
               <ChevronLeftIcon className="w-4 h-4" />
@@ -68,7 +68,7 @@ export default function CreateWinner() {
               <Input
                 type="text"
                 className="w-full"
-                placeholder="winner First Name"
+                placeholder=" First Name"
                 key={fields.firstName.key}
                 name={fields.firstName.name}
                 defaultValue={fields.firstName.initialValue}
@@ -80,7 +80,7 @@ export default function CreateWinner() {
               <Input
                 type="text"
                 className="w-full"
-                placeholder="winner Last Name"
+                placeholder=" Last Name"
                 key={fields.lastName.key}
                 name={fields.lastName.name}
                 defaultValue={fields.lastName.initialValue}
@@ -92,7 +92,7 @@ export default function CreateWinner() {
               <Input
                 type="text"
                 className="w-full"
-                placeholder="winners Email"
+                placeholder=" Email"
                 key={fields.email.key}
                 name={fields.email.name}
                 defaultValue={fields.email.initialValue}

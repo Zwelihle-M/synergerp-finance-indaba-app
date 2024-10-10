@@ -39,10 +39,10 @@ export default async function DashboardLayout({
   const { getUser } = getKindeServerSession();
   const user = await getUser();
 
-  // List of allowed emails
+  
   const allowedEmails = ["zwelihle408@gmail.com", "mondlim@synergerp.com", "joyb@synergerp.com","senzom@synergerp.com"];
 
-  // Check if the admin is authenticated and email is in the allowed list
+
   if (!user || !user.email || !allowedEmails.includes(user.email)) {
     return redirect("/signin");
   }
